@@ -26,7 +26,10 @@
 - sintaxe que representa "e": `and` e `&&`
 - sintaxe que representa "ou": `or` e `||`
 
+## Loops
 
+- `continue;`: vai pra próxima iteração do loop
+- `break;`: quebra, sai do loop
 
 
 
