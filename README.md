@@ -30,8 +30,11 @@ Repositório de estudos sobre PHP básico. A seguir, um breve resumo.
 
 ## Array associativo
 
-- podemos definir estes índices
-- posso associar nome de uma chave a um valor
+- define elementos composto por chave e valor
+- associação é feita com `=>`
+- chave funciona como índice, que pode ser definido por nós
+- valor pode ser tipo primitivo ou outro array
+- as chaves podem ser do tipo string ou numérico
 
 Como criar um array associativo:
 
@@ -50,9 +53,7 @@ echo $conta1['titular'];
 
 ## For Each
 
-- chamo a lista e dou o nome da variável que quero chamar cada uma delas da lista
-- pode acessar ela dentro, chamando a variável criada
-- e também acessar via índice seus elementos
+- podemos acessar o índice e o valor do elemento da iteração
 
 ```php
 foreach ($contasCorrentes as $conta) {

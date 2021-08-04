@@ -31,12 +31,21 @@
 - `continue;`: vai pra próxima iteração do loop
 - `break;`: quebra, sai do loop
 
+## Arrays
+
+- no php os arrays são armazenados como HashTables (tabelas de espalgamento)
+- tem tamanho dinâmico, podem ter strings como índices e manipulados de diversas formas
+- dica: não usar array quando poderia estar usando objeto!
+
 ## Array associativo
 
-- forma de tabela, de mapa, onde o índice é mapeado para um valor
-- podemos definir estes índices
-- posso associar noma de uma chave a um valor
-- tem strings como chaves (já os arrays comuns são numéricos e tem inteiros como chaves)
+- define elementos composto por chave e valor
+- associação é feita com `=>`
+- chave funciona como índice, que pode ser definido por nós
+- valor pode ser tipo primitivo ou outro array
+- as chaves podem ser do tipo string ou numérico
+- qualquer outro tipo, o php tenta converter
+- também pode ser chamado de: mapa, dicionário
 
 Como criar um array associativo:
 
@@ -61,6 +70,7 @@ echo $conta1['titular'];
 - e também acessar via índice seus elementos
 - para cada uma das contas correntes como conta (exemplo abaixo)
 - com o `foreach` eu não preciso saber os índices para acessar a lista
+- podemos acessar o índice e o valor do elemento da iteração
 
 ```php
 foreach ($contasCorrentes as $conta) {
@@ -68,5 +78,7 @@ foreach ($contasCorrentes as $conta) {
 }
 ```
 
-
+- como adicionar um novo item a um array?
+- vai pro fim da lista: `$lista[] = $item;`
+- define a chave e vai pro fim da lista: `$lista[$chave] = $item;`
 
