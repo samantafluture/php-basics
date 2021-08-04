@@ -27,3 +27,35 @@ Repositório de estudos sobre PHP básico. A seguir, um breve resumo.
 
 - sintaxe que representa "e": `and` e `&&`
 - sintaxe que representa "ou": `or` e `||`
+
+## Array associativo
+
+- podemos definir estes índices
+- posso associar nome de uma chave a um valor
+
+Como criar um array associativo:
+
+```php
+$contaCorrente = [
+    'titular' => 'Samanta',
+    'saldo' => '1000'
+];
+```
+
+Como exibir um item do array associativo: 
+
+```php
+echo $conta1['titular'];
+```
+
+## For Each
+
+- chamo a lista e dou o nome da variável que quero chamar cada uma delas da lista
+- pode acessar ela dentro, chamando a variável criada
+- e também acessar via índice seus elementos
+
+```php
+foreach ($contasCorrentes as $conta) {
+    echo $conta['titular'] . PHP_EOL;
+}
+```

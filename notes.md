@@ -51,7 +51,22 @@ Como exibir um item do array associativo:
 
 ```php
 echo $conta1['titular'];
-````
+```
+
+## For Each
+
+- "para cada"
+- chamo a lista e dou o nome da variável que quero chamar cada uma delas da lista
+- pode acessar ela dentro, chamando a variável criada
+- e também acessar via índice seus elementos
+- para cada uma das contas correntes como conta (exemplo abaixo)
+- com o `foreach` eu não preciso saber os índices para acessar a lista
+
+```php
+foreach ($contasCorrentes as $conta) {
+    echo $conta['titular'] . PHP_EOL;
+}
+```
 
 
 
