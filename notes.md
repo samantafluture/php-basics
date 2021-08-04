@@ -21,6 +21,10 @@
 - `\n` quebra a linha e `\t` exibe tab e `\$` exibe o cifrão
 - `PHP_EOL` -> fim da linha, quebra de linha
 
+## Decisões
+
+- sintaxe que representa "e": `and` e `&&`
+- sintaxe que representa "ou": `or` e `||`
 
 
 
