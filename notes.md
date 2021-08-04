@@ -31,6 +31,27 @@
 - `continue;`: vai pra próxima iteração do loop
 - `break;`: quebra, sai do loop
 
+## Array associativo
+
+- forma de tabela, de mapa, onde o índice é mapeado para um valor
+- podemos definir estes índices
+- posso associar noma de uma chave a um valor
+- tem strings como chaves (já os arrays comuns são numéricos e tem inteiros como chaves)
+
+Como criar um array associativo:
+
+```php
+$contaCorrente = [
+    'titular' => 'Samanta',
+    'saldo' => '1000'
+];
+```
+
+Como exibir um item do array associativo: 
+
+```php
+echo $conta1['titular'];
+````
 
 
 
