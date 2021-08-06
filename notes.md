@@ -141,8 +141,42 @@ function soma($x, $y)
 $resultado = soma(2,2); // resultado = 4
 ```
 
+### Tipar funções 
+
+- disponível a partir do PHP 7.0
 - se quiser determinar qual tipo de variável quer receber, basta tipar antes
 - por exemplo, quero receber apenas tipo float (ou inteiro convertido)
 - ou seja, posso sempre informar o tipo do dado que quero receber
-- `function depositar($conta, float $valorADepositar)`
+- exemplo: `function depositar(array$conta, float $valorADepositar)`
 
+## Strings
+
+### Interpolação com arrays associativos
+
+- colocar tudo entre "" (aspas duplas)
+- e retirar as aspas da chave a ser acessa dentro do array: `['saldo']` via `[saldo]`
+- exemplo `"$cpf $conta[titular] $conta[saldo]"`
+
+### Forma complexa (melhor forma)
+
+- quando tem muitos dados complexos, interpolar com estes dados entre chaves
+- aí pode manter as chaves dentro dos arrays
+- exemplo: `"$cpf {$conta['titular']} {$conta['saldo']}"`
+
+## Trabalhar com arquivos separados
+
+**include**
+
+- `include './funcoes.php';`
+- se ele não encontra o arquivo, ele só dá um warning, não gera erro
+- ele é feito para quando precisamos de um arquivo, mas que se ele não existe, não tem problema pois não é essencial
+
+**require**
+
+- `require './funcoes.php';`
+- para arquivos que são essenciais, obrigatórios para o funcionamento do programa
+
+**require_once**
+
+- verifica que o arquivo já foi incluído antes
+- se já, ele não inclui novamente, logo não dá erro se tiver duplicado
