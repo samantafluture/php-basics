@@ -82,3 +82,67 @@ foreach ($contasCorrentes as $conta) {
 - vai pro fim da lista: `$lista[] = $item;`
 - define a chave e vai pro fim da lista: `$lista[$chave] = $item;`
 
+## Subrotinas
+
+- subrotina -> isolando uma funcionaliade em uma função para ser utilizada em outros lugares do código
+- pedaço de execução isolado que vai ser executado em outros lugares no código
+- pode não precisar de parâmetros
+- executa tudo o que precisa dentro dela e não devolve valor nenhum
+
+Exemplo:
+- função de exibir mensagem recebe como parâmetro uma mensagem a ser exibida
+
+```php
+function exibeMensagem($mensagem)
+{
+    echo $mensagem . PHP_EOL;
+}
+```
+
+Sintaxe:
+
+```php
+function nomeDaRotina ($parametro)
+{
+    // código a ser executado na subrotina
+}
+```
+
+## Funções
+
+- recebe um valor e devolve um valor modificado
+- pode receber e devolver um valor
+- ela executa e devolve um valor
+
+Exemplo:
+
+```php
+function adiciona2($x)
+{
+    return $x + 2;
+}
+```
+
+Chamando essa função:
+
+```php
+$sete = adiciona2(x: 5);
+// o resultado vai ser 7
+```
+
+Sintaxe da função:
+
+```php
+function soma($x, $y)
+{
+    return $x + $y;
+}
+
+$resultado = soma(2,2); // resultado = 4
+```
+
+- se quiser determinar qual tipo de variável quer receber, basta tipar antes
+- por exemplo, quero receber apenas tipo float (ou inteiro convertido)
+- ou seja, posso sempre informar o tipo do dado que quero receber
+- `function depositar($conta, float $valorADepositar)`
+
