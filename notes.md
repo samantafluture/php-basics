@@ -180,3 +180,9 @@ $resultado = soma(2,2); // resultado = 4
 
 - verifica que o arquivo já foi incluído antes
 - se já, ele não inclui novamente, logo não dá erro se tiver duplicado
+
+## Valor vs Referência
+
+- para chamar a referência, o valor verdadeiro, usar o `&` antes da variável: `&$valor`
+- para chamar a cópia, o valor de retorno: `$valor`
+
